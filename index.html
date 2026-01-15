@@ -1,423 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Asesoría Legal para Pymes | Chile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asesoría legal laboral y en deudas judicializadas para pymes chilenas. Outsourcing legal con enfoque preventivo y estratégico.">
-    
-    <!-- =========================
-         ESTILOS CSS – SIN LIBRERÍAS
-    ========================== -->
-    <style>
-        :root {
-            --color-primario: #1f2937;
-            --color-secundario: #374151;
-            --color-acento: #2563eb;
-            --color-fondo: #f9fafb;
-            --color-texto: #111827;
-            --color-gris: #6b7280;
-            --max-width: 1100px;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--color-texto);
-            background-color: var(--color-fondo);
-            line-height: 1.6;
-        }
-
-        a {
-            color: var(--color-acento);
-            text-decoration: none;
-        }
-
-        header {
-            background-color: white;
-            border-bottom: 1px solid #e5e7eb;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .container {
-            max-width: var(--max-width);
-            margin: auto;
-            padding: 0 1rem;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 70px;
-        }
-
-        .logo {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--color-primario);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-        }
-
-        nav a {
-            font-size: 0.95rem;
-            color: var(--color-secundario);
-        }
-
-        nav a:hover {
-            color: var(--color-acento);
-        }
-
-        /* HERO */
-        .hero {
-            background: linear-gradient(135deg, #1f2937, #111827);
-            color: white;
-            padding: 4rem 0;
-        }
-
-        .hero h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin-bottom: 2rem;
-            color: #e5e7eb;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: var(--color-acento);
-            color: white;
-            border-radius: 4px;
-            font-size: 0.95rem;
-        }
-
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
-
-        section {
-            padding: 3rem 0;
-        }
-
-        section h2 {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: var(--color-primario);
-        }
-
-        section p {
-            margin-bottom: 1rem;
-            max-width: 900px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .card {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 6px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .card h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-            color: var(--color-secundario);
-        }
-
-        /* FORMULARIO */
-        form {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 6px;
-            border: 1px solid #e5e7eb;
-            max-width: 600px;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 0.3rem;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        form input,
-        form textarea {
-            width: 100%;
-            padding: 0.6rem;
-            margin-bottom: 1rem;
-            border: 1px solid #d1d5db;
-            border-radius: 4px;
-            font-size: 0.9rem;
-        }
-
-        form textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        .error {
-            color: #b91c1c;
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-        }
-
-        footer {
-            background-color: #111827;
-            color: #d1d5db;
-            padding: 2rem 0;
-            font-size: 0.85rem;
-        }
-
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-
-        /* RESPONSIVE */
-        @media (min-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesoría Legal para Pymes | Outsourcing Legal</title>
+  <meta name="description" content="Asesoría laboral para pymes y asesorías en deudas judicializadas e insolvencia. Outsourcing legal con costos más bajos que estudios jurídicos tradicionales.">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1f2933;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: #1f2933;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .cta {
+      background-color: #e5e7eb;
+      padding: 25px;
+      text-align: center;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background-color: #1f2933;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-<!-- =========================
-     HEADER Y NAVEGACIÓN
-========================= -->
-<header>
-    <div class="container header-content">
-        <div class="logo">Asesoría Legal para Pymes</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quienes">Quiénes somos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+  <header>
+    <h1>Asesoría Legal para Pymes</h1>
+    <p>Outsourcing legal especializado en gestión laboral y resolución de conflictos financieros</p>
+  </header>
 
-<!-- =========================
-     HERO
-========================= -->
-<section class="hero" id="inicio">
-    <div class="container">
-        <h1>Respaldo jurídico permanente para pymes chilenas</h1>
-        <p>
-            Asesoría legal laboral y en deudas judicializadas, bajo un modelo de outsourcing legal
-            diseñado para apoyar la gestión empresarial, prevenir conflictos y entregar
-            seguridad jurídica en la toma de decisiones.
-        </p>
-        <a href="#contacto" class="btn">Solicitar asesoría</a>
-    </div>
-</section>
+  <section>
+    <h2>¿A quién está dirigido este servicio?</h2>
+    <p>
+      A pymes y negocios de barrio formales que requieren asesoría legal permanente,
+      práctica y eficiente, sin los altos costos de un estudio jurídico tradicional.
+    </p>
+  </section>
 
-<!-- =========================
-     QUIÉNES SOMOS
-========================= -->
-<section id="quienes">
-    <div class="container">
-        <h2>Quiénes somos</h2>
-        <p>
-            Somos un servicio de asesoría legal enfocado en pymes y negocios de barrio formales,
-            que requieren apoyo jurídico confiable sin contar con un departamento legal interno.
-            Nuestro trabajo se basa en el acompañamiento permanente, el análisis jurídico riguroso
-            y una visión preventiva de los riesgos legales.
-        </p>
-    </div>
-</section>
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li><strong>Asesoría laboral para pymes:</strong> cumplimiento normativo, gestión laboral y prevención de contingencias.</li>
+      <li><strong>Asesorías en deudas judicializadas e insolvencia:</strong> análisis de causas, estrategias de defensa, negociación y alternativas legales.</li>
+      <li><strong>Outsourcing legal:</strong> acompañamiento jurídico continuo adaptado a la realidad del negocio.</li>
+    </ul>
+  </section>
 
-<!-- =========================
-     SERVICIOS
-========================= -->
-<section id="servicios">
-    <div class="container">
-        <h2>Servicios</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Asesoría laboral para pymes</h3>
-                <p>Redacción y revisión de contratos de trabajo, términos de contrato, finiquitos,
-                cumplimiento normativo laboral y prevención de contingencias ante fiscalizaciones
-                de la Dirección del Trabajo.</p>
-            </div>
-            <div class="card">
-                <h3>Outsourcing legal</h3>
-                <p>Acompañamiento jurídico permanente, resolución de consultas legales recurrentes
-                y apoyo estratégico para la toma de decisiones empresariales, con un enfoque
-                preventivo y ordenado.</p>
-            </div>
-            <div class="card">
-                <h3>Asesoría en deudas judicializadas</h3>
-                <p>Análisis jurídico de causas, revisión de antecedentes procesales, evaluación de
-                prescripción y orientación legal para la regularización de obligaciones.</p>
-            </div>
-        </div>
-    </div>
-</section>
+  <section>
+    <h2>¿Por qué externalizar la asesoría legal?</h2>
+    <p>
+      Existen materias que <strong>no pueden ni deben ser delegadas a un contador</strong>,
+      especialmente cuando involucran conflictos laborales o deudas en etapa judicial.
+    </p>
+    <p>
+      Nuestro modelo permite acceder a asesoría legal especializada,
+      con <strong>costos significativamente más bajos que los abogados particulares</strong>,
+      manteniendo un enfoque serio, responsable y estratégico.
+    </p>
+  </section>
 
-<!-- =========================
-     MODELO DE HONORARIOS
-========================= -->
-<section id="honorarios">
-    <div class="container">
-        <h2>Modelo de honorarios eficiente</h2>
-        <p>
-            Trabajamos bajo un sistema de outsourcing legal con una estructura de honorarios
-            optimizada, pensada para la realidad de las pymes. Este modelo permite acceder a
-            asesoría jurídica permanente y especializada, evitando la contratación puntual y
-            fragmentada de servicios legales tradicionales.
-        </p>
-        <p>
-            El enfoque está en la planificación, la prevención y la continuidad del apoyo legal,
-            entregando certeza en los costos y coherencia en la gestión jurídica del negocio.
-        </p>
-    </div>
-</section>
+  <section class="cta">
+    <h2>Contacto</h2>
+    <p>
+      Si necesitas evaluar tu situación laboral o financiera,
+      escríbenos y revisaremos tu caso.
+    </p>
+    <a href="mailto:contacto@tucorreo.cl">Contáctanos por correo</a>
+    <!-- Cambia contacto@tucorreo.cl por tu correo real -->
+  </section>
 
-<!-- =========================
-     JURÍDICO VS CONTABLE
-========================= -->
-<section id="diferencia">
-    <div class="container">
-        <h2>Asesoría jurídica y gestión contable: roles complementarios</h2>
-        <p>
-            La gestión contable cumple un rol fundamental en la administración de una empresa.
-            Sin embargo, existen materias laborales y judiciales que, por su naturaleza jurídica
-            y por las consecuencias legales que generan, requieren análisis y asesoría legal
-            especializada.
-        </p>
-        <p>
-            Nuestro servicio busca complementar el trabajo contable, abordando aquellas
-            decisiones y situaciones que deben ser evaluadas desde el punto de vista jurídico,
-            siempre con respeto y coordinación entre profesionales.
-        </p>
-    </div>
-</section>
-
-<!-- =========================
-     POR QUÉ TRABAJAR CON NOSOTROS
-========================= -->
-<section id="porque">
-    <div class="container">
-        <h2>Por qué trabajar con nosotros</h2>
-        <div class="grid">
-            <div class="card">
-                <p>Enfoque preventivo y estratégico, orientado a reducir riesgos legales.</p>
-            </div>
-            <div class="card">
-                <p>Lenguaje claro y comprensible, adaptado a la realidad de las pymes.</p>
-            </div>
-            <div class="card">
-                <p>Acompañamiento jurídico permanente, sin improvisaciones.</p>
-            </div>
-            <div class="card">
-                <p>Especialización en materias laborales y deudas judicializadas.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- =========================
-     CONTACTO
-========================= -->
-<section id="contacto">
-    <div class="container">
-        <h2>Contacto</h2>
-        <form id="contactForm">
-            <div class="error" id="errorMsg"></div>
-
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" required>
-
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" required>
-
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" required></textarea>
-
-            <button type="submit" class="btn">Enviar consulta</button>
-        </form>
-    </div>
-</section>
-
-<!-- =========================
-     FOOTER
-========================= -->
-<footer>
-    <div class="container">
-        <p><strong>Asesoría Legal para Pymes</strong> – Chile</p>
-        <p>Lunes a viernes, horario laboral.</p>
-        <p>
-            Aviso legal: La información contenida en este sitio es de carácter general y no
-            constituye asesoría legal personalizada. El envío de un mensaje o contacto no
-            genera una relación abogado-cliente hasta la aceptación expresa del encargo
-            profesional.
-        </p>
-    </div>
-</footer>
-
-<!-- =========================
-     JAVASCRIPT PURO
-========================= -->
-<script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const nombre = document.getElementById("nombre").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const mensaje = document.getElementById("mensaje").value.trim();
-        const errorMsg = document.getElementById("errorMsg");
-
-        errorMsg.textContent = "";
-
-        if (!nombre || !email || !mensaje) {
-            errorMsg.textContent = "Por favor complete todos los campos.";
-            return;
-        }
-
-        const asunto = encodeURIComponent("Consulta Asesoría Legal para Pymes");
-        const cuerpo = encodeURIComponent(
-            "Nombre: " + nombre + "\n" +
-            "Correo: " + email + "\n\n" +
-            "Mensaje:\n" + mensaje
-        );
-
-        // Reemplazar correo@dominio.cl por el correo real del negocio
-        window.location.href = "mailto:correo@dominio.cl?subject=" + asunto + "&body=" + cuerpo;
-    });
-</script>
+  <footer>
+    <p>Asesoría Legal para Pymes · Chile</p>
+  </footer>
 
 </body>
 </html>
