@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asesoría Laboral | Soluciones claras y seguras</title>
+  <meta name="description" content="Asesoría laboral profesional para trabajadores y pymes. Defensa de derechos laborales, despidos, finiquitos y contratos." />
+  <style>
+    :root {
+      --primary: #1f3a5f;
+      --secondary: #e8eef5;
+      --accent: #f59e0b;
+      --text: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    }
+
+    body {
+      color: var(--text);
+      line-height: 1.6;
+      background: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #0f172a);
+      color: white;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 0.9rem 1.4rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--secondary);
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .contact {
+      background: #f8fafc;
+      border-radius: 1rem;
+      padding: 2rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 0.4rem;
+      border: 1px solid #cbd5e1;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+
+      .about {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Asesoría Laboral Profesional</h1>
+    <p>Defendemos tus derechos laborales con claridad, estrategia y respaldo jurídico. Atención personalizada para trabajadores y pymes.</p>
+    <a href="#contacto" class="btn">Agenda una consulta</a>
+  </header>
+
+  <section>
+    <h2>¿En qué podemos ayudarte?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Despidos y finiquitos</h3>
+        <p>Revisión de despidos, cálculo correcto de indemnizaciones y negociación estratégica.</p>
+      </div>
+      <div class="card">
+        <h3>Contratos y anexos</h3>
+        <p>Análisis y redacción de contratos de trabajo, anexos y cláusulas especiales.</p>
+      </div>
+      <div class="card">
+        <h3>Derechos laborales</h3>
+        <p>Vulneración de derechos fundamentales, acoso laboral, descuentos indebidos.</p>
+      </div>
+      <div class="card">
+        <h3>Asesoría a PYMES</h3>
+        <p>Cumplimiento laboral, prevención de contingencias y acompañamiento continuo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div>
+      <h2>Una asesoría clara y honesta</h2>
+      <p>Creemos en una asesoría laboral cercana, sin tecnicismos innecesarios y con foco en soluciones reales. Cada caso es analizado con seriedad y estrategia jurídica.</p>
+      <p>Atendemos de forma presencial y online, adaptándonos a tu realidad.</p>
+    </div>
+    <div>
+      <div class="card">
+        <h3>✔ Confidencialidad</h3>
+        <h3>✔ Atención personalizada</h3>
+        <h3>✔ Experiencia en derecho laboral chileno</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <div class="contact">
+      <form onsubmit="enviarFormulario(event)">
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea rows="4" placeholder="Cuéntanos brevemente tu caso" required></textarea>
+        <button type="submit">Enviar consulta</button>
+      </form>
+      <p id="mensaje" style="margin-top:1rem;"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Asesoría Laboral. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function enviarFormulario(e) {
+      e.preventDefault();
+      document.getElementById('mensaje').textContent = 'Gracias por tu mensaje. Te contactaremos a la brevedad.';
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
